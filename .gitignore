@@ -1,0 +1,13 @@
+.*
+!.gitignore
+*~
+*.py[co]
+.*.sw[po]
+*.egg-info
+*.sqlite
+build
+dist
+env
+logs
+docs/.build
+docs/_build
