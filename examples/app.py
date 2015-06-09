@@ -167,6 +167,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--debug', 
         action="store_true", default=False, help='run server as debug mode.')
-    parser.add_argument('-p', '--port', default=5000, help='run server listen port.')
+    parser.add_argument('-p', '--port', default=5000, type=int, help='run server listen port.')
     args = parser.parse_args()
     app.run(debug=args.debug, port=args.port)
