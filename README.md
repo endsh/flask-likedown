@@ -2,6 +2,7 @@ Flask-Likedown
 ==============
 
 It is a markdown eidtor based on [likedown.js][1] and [WTForms][2]. 
+
 For more information see: http://flask-likedown.chiki.org
 
 Simple usage
