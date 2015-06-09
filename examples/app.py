@@ -163,4 +163,7 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('debug', type=bool, help='run server as debug mode.')
+    app.run(debug=parser.debug)
