@@ -166,4 +166,5 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('debug', type=bool, help='run server as debug mode.')
+    parser.parse_args()
     app.run(debug=parser.debug)
