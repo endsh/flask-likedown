@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from markdown.extensions import Extension
 from markdown.extensions.toc import slugify
 from markdown.extensions.toc import TocTreeprocessor as _TocTreeprocessor
+from markdown.extensions.codehilite import CodeHiliteExtension
 from markdown.blockprocessors import BlockProcessor
 from markdown.util import etree
 
@@ -171,9 +172,17 @@ class TocExtension(Extension):
         self.md.toc = ''
 
 
+class CodeExtension(CodeHiliteExtension):
+    pass
+
+
 def table_extension(*args, **kwargs):
     return TableExtension(*args, **kwargs)
 
 
 def toc_extension(*args, **kwargs):
     return TocExtension(*args, **kwargs)
+
+
+def code_extension(*args, **kwargs):
+    return CodeExtension(*args, **kwargs)
